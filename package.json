@@ -1,0 +1,17 @@
+{
+  "name": "react-raw-html",
+  "version": "0.1.0",
+  "description": "React components that output their children as raw HTML.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "dangerouslySetInnerHtml",
+    "raw",
+    "html"
+  ],
+  "author": "Sasha Aickin",
+  "license": "Apache-2.0"
+}
