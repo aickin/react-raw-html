@@ -1,10 +1,14 @@
 import React from "react";
 
-const getChildrenAsString = (children) => {
+const flattenChildren = (children) => {
 	if (!children) {
-		return "";
+		return [];
 	}
-	return React.Children.map(children, (child) => child).join("");
+	return React.Children.map(children, (child) => child);
+}
+
+const getChildrenAsString = (children) => {
+	return flattenChildren(children).join("");
 }
 
 const rawFactory = (Component) => {
