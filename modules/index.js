@@ -4,14 +4,7 @@ const getChildrenAsString = (children) => {
 	if (!children) {
 		return "";
 	}
-	if (typeof children === "string") {
-		return children;
-	}
-	let returnValue = "";
-	for (let child of children) {
-		returnValue += getChildrenAsString(child);
-	}
-	return returnValue;
+	return React.Children.map(children, (child) => child).join("");
 }
 
 const rawFactory = (Component) => {
