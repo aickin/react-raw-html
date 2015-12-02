@@ -2,8 +2,10 @@
   "name": "react-raw-html",
   "version": "0.1.0",
   "description": "React components that output their children as raw HTML.",
-  "main": "index.js",
+  "main": "build/RawHtml-server.js",
+  "browser": "build/RawHtml-browser.js",
   "scripts": {
+    "build": "./node_modules/babel-cli/bin/babel.js modules --out-dir build",
     "test": "jest"
   },
   "keywords": [
@@ -15,13 +17,17 @@
   "author": "Sasha Aickin",
   "license": "Apache-2.0",
   "devDependencies": {
+    "babel-cli": "^6.2.0",
     "babel-jest": "^6.0.1",
     "babel-preset-es2015": "^6.1.18",
     "babel-preset-react": "^6.1.18",
+    "concat-stream": "^1.5.1",
     "jest-cli": "^0.8.0",
-    "react-addons-test-utils": "^0.14.3"
+    "react-addons-test-utils": "^0.14.3",
+    "react-dom-stream": "^0.3.0"
   },
   "dependencies": {
+    "multistream": "^2.0.2",
     "react": "^0.14.3",
     "react-dom": "^0.14.3"
   },
@@ -35,6 +41,10 @@
     ],
     "modulePathIgnorePatterns": [
       "<rootDir>/node_modules/"
-    ]
+    ],
+    "testPathDirs": [
+      "modules"
+    ],
+    "testRunner": "<rootDir>/node_modules/jest-cli/src/testRunners/jasmine/jasmine2.js"
   }
 }
