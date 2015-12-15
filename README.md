@@ -18,6 +18,8 @@ This is just syntactic sugar around React's `dangerouslySetInnerHtml`.
 
 Please note that embedding raw HTML that comes from untrusted sources can be extremely dangerous and lead to cross-site scripting attacks. You should only use these components if you are completely positive that the content you are embedding is safe.
 
+Also, note that this project is compatible with `react-dom-stream`. When doing server-side rendering with `react-dom-stream`, components from `react-raw-html` can embed either strings *or streams* of raw HTML.
+
 ## Installation
 
 ```
