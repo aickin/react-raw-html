@@ -28,7 +28,7 @@ npm install react-raw-html
 
 ## API
 
-### RawHtml.<tagname>
+### RawHtml.\<tagname\>
 
 All of the current non-empty HTML 5 tag names should be present on the RawHtml object as components. So if you want to embed raw HTML in a span, use `RawHtml.span`. If you want a div, use `RawHtml.div`. You get the idea.
 
@@ -48,3 +48,7 @@ const MyComponent = (somePreformattedRawHtml) => {
 
 export default MyComponent;
 ```
+
+## License
+
+Apache 2.0
