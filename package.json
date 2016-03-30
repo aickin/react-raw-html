@@ -1,6 +1,6 @@
 {
   "name": "react-raw-html",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "React components that output their children as raw HTML.",
   "main": "build/RawHtml-server.js",
   "browser": "build/RawHtml-browser.js",
