@@ -8,6 +8,10 @@
     "build": "./node_modules/babel-cli/bin/babel.js modules --out-dir build",
     "test": "jest"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aickin/react-raw-html.git"
+  },
   "keywords": [
     "react",
     "dangerouslySetInnerHtml",
